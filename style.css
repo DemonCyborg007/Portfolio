@@ -80,8 +80,6 @@ nav ul li a:hover::after{
 	width: 50%;
 }
 .text-box{
-	width: 50%;
-	height: 100vh;
 	color: #fff;
 	position: absolute;
 	bottom: 8%;
