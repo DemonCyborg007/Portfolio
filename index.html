@@ -19,7 +19,7 @@
 		</nav>
 		<div class="text-box">
             <h2>Hi</h2>
-			<p>I'm an enthusiatic Coder and programmer. <br>I also like to create cool webpages.</p>
+			<p>I'm <span class="input"></span>. <br>I also like to create cool webpages.</p>
 			<h1>#Cool</h1>
 			<div class='row'>
 			<a>About <span>&#x27F6;</span></a>
@@ -31,12 +31,11 @@
 			<a href="https://www.youtube.com/channel/UCSLS8tCSYBQ5BW1vBjlzakQ"><img src="images/yt.png" ></a>
 		</div>
 		<div class="app-picture">
-          <img src="images/mayukh.png">
-      </div>
+          	<img src="images/mayukh.png">
+      		</div>
 	</div>
 <!-----cursor------>
 	<div id='cursor'></div>
-
 
 	<script>
 		var cursor= document.getElementById('cursor');
@@ -46,6 +45,15 @@
 			cursor.style.top=(e.pageY - 25)+"px" ;
 			cursor.style.display='block';
 		}
+	</script>
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	<script>
+		var typed = new Typed(".input",{
+			strings:["Mayukh Roy","developer","freelancer"],
+			typeSpeed:120,
+			backSpeed:120,
+			loop:true
+		})
 	</script>
 
 </body>
