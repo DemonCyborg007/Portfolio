@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>Mayukh Roy</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Mayukh Roy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body bgcolor="red">
-	<div class='container'>
-		<nav>
-			<h1>MAYUKH ROY</h1>
-			<ul>
-				<li class="about"><a href="index.html">About</a></li>
-                		<li><a href="work.html">Work</a></li>
-				<li><a href="">Home</a></li>
-				<li><a href="https://demoncyborg007.github.io/AI_generated_images/">AI  Gallery</a></li>
-			</ul>
-			
-		</nav>
-		<div class="text-box">
-            <h3>Hi</h3>
-			<h3>I'm <span class="input"></span>. </h3><p><br>I also like to create cool projects  which create impact.<br>In the boundless expanse of web development,<br> I command an extensive toolkit, seamlessly integrating<br> MERN, Django, Flask, AI, ML, and deep learning. <br>Navigating from polished frontends to resilient backends,<br> I explore digital realms where algorithms waltz and<br> data composes an opus of innovation.</p>
-<!-- 			<h1>#Cool</h1> -->
-			<div class='row'>
-			<a href="https://drive.google.com/file/d/1ibowi_HX57q7Q_Cy6t972yphjaBd5Yuy/view?usp=sharing">RESUME</a>
-			<span><a href = "mailto:mrdemoncyborg007@gmail.com?subject = Feedback&body = Message">mrdemoncyborg007@gmail.com</a></span>
-			</div>
-		</div>
-		<div class="social-icons">
-			<a href="https://www.linkedin.com/in/mayukh-roy-9049b722a/"><img src="images/link.png" ></a>
-			<a href="https://www.youtube.com/channel/UCSLS8tCSYBQ5BW1vBjlzakQ"><img src="images/yt.png" ></a>
-		</div>
+    <div class="container">
+        <nav>
+            <h1>MAYUKH ROY</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li class="about"><a href="index.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="https://demoncyborg007.github.io/AI_generated_images/">AI Gallery</a></li>
+            </ul>
+        </nav>
 		<div class="app-picture">
-          	<img src="images/mayukh.png">
-      		</div>
-	</div>
-<!-----cursor------>
-	<div id='cursor'></div>
+			<img src="images/mayukh.png">
+		</div>
+        <div class="text-box">
+            <h3>Hi</h3>
+            <h3>I'm <span class="input"></span>. </h3>
+            <p>I also like to create cool projects which create impact.<br>In the boundless expanse of web development,<br> I command an extensive toolkit, seamlessly integrating<br> MERN, Django, Flask, AI, ML, and deep learning.<br>Navigating from polished frontends to resilient backends,<br> I explore digital realms where algorithms waltz and<br> data composes an opus of innovation.</p>
+            <div class="row">
+                <a href="https://drive.google.com/file/d/1ibowi_HX57q7Q_Cy6t972yphjaBd5Yuy/view?usp=sharing">RESUME</a>
+                <span><a href="mailto:mrdemoncyborg007@gmail.com?subject=Feedback&body=Message">mrdemoncyborg007@gmail.com</a></span>
+            </div>
+        </div>
+		<div class="social-icons">
+            <a href="https://www.linkedin.com/in/mayukh-roy-9049b722a/"><img src="images/link.png"></a>
+            <a href="https://www.youtube.com/channel/UCSLS8tCSYBQ5BW1vBjlzakQ"><img src="images/yt.png"></a>
+        </div>
+    </div>
+    <!-- cursor -->
+    <div id="cursor"></div>
 
-	<script>
-		var cursor= document.getElementById('cursor');
+    <script>
+        var cursor = document.getElementById('cursor');
 
-		document.onmousemove = function(e){
-			cursor.style.left=(e.pageX - 25)+"px" ;
-			cursor.style.top=(e.pageY - 25)+"px" ;
-			cursor.style.display='block';
-		}
-	</script>
-	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-	<script>
-		var typed = new Typed(".input",{
-			strings:["Mayukh Roy","a developer","a freelancer","a ML enthusiast","a beatboxer","a creator","a learner","a problem-solver","an achiever"],
-			typeSpeed:120,
-			backSpeed:120,
-			loop:true
-		})
-	</script>
-
+        document.onmousemove = function(e){
+            cursor.style.left = (e.pageX - 25) + "px";
+            cursor.style.top = (e.pageY - 25) + "px";
+            cursor.style.display = 'block';
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings:["Mayukh Roy", "a developer", "a freelancer", "a ML enthusiast", "a beatboxer", "a creator", "a learner", "a problem-solver", "an achiever"],
+            typeSpeed: 120,
+            backSpeed: 120,
+            loop: true
+        })
+		function toggleMenu() {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var menu = document.querySelector('.menu');
+    menuToggle.classList.toggle('active');
+    menu.classList.toggle('active');
+	}
+    </script>
 </body>
 </html>
