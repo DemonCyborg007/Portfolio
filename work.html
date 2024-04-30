@@ -10,15 +10,19 @@
 <body bgcolor="red">
     <div class='container'>
 		<nav>
-			<h1>MAYUKH ROY</h1>
-			<ul>
-				<li class="about"><a href="index.html">About</a></li>
-                		<li><a href="work.html">Work</a></li>
-				<li><a href="">Home</a></li>
-				<li><a href="https://demoncyborg007.github.io/AI_generated_images/">AI  Gallery</a></li>
-			</ul>
-			
-		</nav>
+            <h1>MAYUKH ROY</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li class="about"><a href="index.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="https://demoncyborg007.github.io/AI_generated_images/">AI Gallery</a></li>
+            </ul>
+        </nav>
         <div class="row">
             <div class="column">
 		<a href="https://demoncyborg007.github.io/Recog_Digit/">
@@ -106,5 +110,13 @@
             </div>
         </div>
     </div>
+    <script>
+	function toggleMenu() {
+    	var menuToggle = document.querySelector('.menu-toggle');
+    	var menu = document.querySelector('.menu');
+    	menuToggle.classList.toggle('active');
+    	menu.classList.toggle('active');
+	}
+    </script>
 </body>
 </html>
