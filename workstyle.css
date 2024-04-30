@@ -137,9 +137,63 @@ nav ul li a:hover::after{
   }
 
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .column {
       flex: 100%;
-      max-width: 100%;
+      max-width: 80%;
+    }
+	nav h1 {
+        font-size: 30px;
+    }
+
+    .menu {
+		display: flex;
+		list-style: none;
+		position: fixed;
+		top: 0;
+		right: -75%; /* Start offscreen */
+		bottom: 0;
+		flex-direction: column;
+		background-color: #333;
+		width: 75%; /* Set width to half of the screen */
+		transition: right 0.3s; /* Add transition for smooth animation */
+		align-items: center;
+		
+	}
+	
+	.menu.active {
+		right: 0; /* Move menu to the right when active */
+	}
+	
+	.menu li {
+		margin: 10px;
+	}
+	
+	.menu-toggle {
+		display: block;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		z-index: 10; /* Ensure it appears above other content */
+	}
+	
+	.menu-toggle .bar {
+		width: 30px;
+		height: 3px;
+		background-color: #fff;
+		margin: 5px 0;
+		transition: 0.4s;
+	}
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 }
