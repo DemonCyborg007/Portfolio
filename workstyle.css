@@ -5,6 +5,9 @@
 	font-family: 'poppons',sans-serif;
 
 }
+/* div{
+	border: 5px solid #ccc;
+} */
 .container{
 	width: 100%;
 	height: 100vh;
@@ -135,6 +138,9 @@ nav ul li a:hover::after{
     max-width: 50%;
     padding: 0;
   }
+.text-links{
+	display: none;
+}
 
   
 @media screen and (max-width: 768px) {
@@ -196,4 +202,32 @@ nav ul li a:hover::after{
     .menu-toggle.active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+	.box {
+		display: none;
+	}
+	.text-links {
+		display: inline-block;
+		text-align: center; /* Center the text links */
+	}
+	
+	.text-links a {
+		display: inline-block; /* Display each link as a block element */
+		margin-bottom: 10px; /* Add spacing between each text link */
+		color: #fff;
+		text-decoration: none;
+		padding: 5px; /* Add padding for clickable area */
+	}
+	
+	/* .text-links a :hover {
+		width: 0;
+		height: 3px;
+		position: absolute;
+		bottom: -5px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #fff;
+		transition: width 0.3s;
+	} */
+	
+		
 }
