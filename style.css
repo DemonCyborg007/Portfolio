@@ -236,6 +236,7 @@ div:hover ~ #cursor{
     font-size: 30px;
     line-height: 15px;
     margin-left: 5px;
+    z-index: 2;
 }
 
 
