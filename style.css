@@ -218,6 +218,7 @@ div:hover ~ #cursor{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px;
+    z-index: 2;
 }
 
 .text-box a {
