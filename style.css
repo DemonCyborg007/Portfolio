@@ -228,6 +228,7 @@ div:hover ~ #cursor{
     border: 2px solid #fff;
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 
 .text-box a span {
