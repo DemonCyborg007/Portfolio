@@ -239,6 +239,10 @@ div:hover ~ #cursor{
     z-index: 2;
 }
 
+.row {
+	z-index: 2;
+}
+
 
 
 @media only screen and (max-width: 768px) {
