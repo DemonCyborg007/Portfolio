@@ -215,12 +215,10 @@ div:hover ~ #cursor{
 }
 
 .text-box .row {
-    position: absolute;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px;
-    z-index: 2;
 }
 
 .text-box a {
@@ -238,7 +236,6 @@ div:hover ~ #cursor{
     font-size: 30px;
     line-height: 15px;
     margin-left: 5px;
-    z-index: 2;
 }
 
 
